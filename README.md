@@ -1,5 +1,7 @@
 # python-firetv
 
+firetv is a Python package that provides state information/control of an Amazon Fire TV device
+
 Clone of the original happyleavesaoc/python-firetv for amd64+armhf image
 
 ## Source
