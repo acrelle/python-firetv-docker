@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y \
     pip install /tmp/python-firetv-master[firetv-server]
 
 CMD ["firetv-server", "-c", "config/devices.yaml"]
+EXPOSE 5556
 
 # docker build -t docker-firetv .
 # docker run -it --rm --name docker-firetv -p 5556:5556 docker-firetv

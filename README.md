@@ -7,7 +7,7 @@ Source: https://github.com/acrelle/python-firetv-docker
 Python-firetv Source: https://github.com/happyleavesaoc/python-firetv
 
 ## Build 
-[![](https://images.microbadger.com/badges/version/acrelle/infobot.svg)](https://microbadger.com/images/acrelle/infobot "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/acrelle/infobot.svg)](https://microbadger.com/images/acrelle/infobot "Get your own image badge on microbadger.com")![](https://travis-ci.com/acrelle/infobot-docker.svg?branch=master)
+[![](https://images.microbadger.com/badges/version/acrelle/python-firetv.svg)](https://microbadger.com/images/acrelle/python-firetv "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/acrelle/python-firetv.svg)](https://microbadger.com/images/acrelle/python-firetv "Get your own image badge on microbadger.com")[![Build Status](https://travis-ci.com/acrelle/python-firetv-docker.svg?branch=master)](https://travis-ci.com/acrelle/python-firetv-docker)
 
 https://hub.docker.com/r/acrelle/python-firetv/
 

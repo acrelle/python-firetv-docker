@@ -22,8 +22,11 @@ script:
       mv manifest-tool-linux-amd64 manifest-tool
       chmod +x manifest-tool
 
-      # # Push manifest-list
+      # Push manifest-list
       ./manifest-tool push from-args --platforms linux/amd64,linux/arm --template "acrelle/python-firetv:OS-ARCH" --target "acrelle/python-firetv:$TRAVIS_BUILD_NUMBER"
       ./manifest-tool push from-args --platforms linux/amd64,linux/arm --template "acrelle/python-firetv:OS-ARCH" --target "acrelle/python-firetv:latest"
+
+      # Update microbadger badge
+      curl -X POST "$MICROBADGER_URL"
 
     fi
