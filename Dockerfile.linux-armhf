@@ -1,4 +1,4 @@
-FROM resin/raspberry-pi-python:2
+FROM balenalib/raspberry-pi-python:2
 LABEL MAINTAINER="anthony@relle.co.uk"
 
 RUN [ "cross-build-start" ]
