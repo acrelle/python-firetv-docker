@@ -4,6 +4,7 @@ LABEL MAINTAINER="anthony@relle.co.uk"
 RUN apt-get update && apt-get install -y \
     libssl-dev \
     libusb-1.0-0 \
+    python-dev \
     swig \
     curl \
     unzip \
