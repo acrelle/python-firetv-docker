@@ -3,21 +3,14 @@ LABEL MAINTAINER="anthony@relle.co.uk"
 
 RUN [ "cross-build-start" ]
 
-RUN apt-get update && apt-get install -y \
-    libssl-dev \
-    libusb-1.0-0 \
-    python-dev \
-    swig \
-    curl \
-    unzip \
+RUN install_packages libssl-dev libusb-1.0-0 python-dev swig curl unzip gcc \
     && curl -L -o /tmp/master.zip https://github.com/happyleavesaoc/python-firetv/archive/master.zip \
     && cd /tmp \
     && unzip master.zip \
     && rm master.zip \
     rm -rf /var/lib/apt/lists/* && \
     pip --no-cache-dir install --upgrade pip && \
-    pip --no-cache-dir install  flask && \
-    pip --no-cache-dir install https://pypi.python.org/packages/source/M/M2Crypto/M2Crypto-0.31.0.tar.gz && \
+    pip --no-cache-dir install  flask && \ 
     pip install /tmp/python-firetv-master[firetv-server]
 
 RUN [ "cross-build-end" ]
