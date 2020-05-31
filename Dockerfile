@@ -1,4 +1,4 @@
-FROM python:2
+FROM python:3
 LABEL MAINTAINER="anthony@relle.co.uk"
 
 RUN apt-get update && apt-get install -y \
